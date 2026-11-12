@@ -1,1 +1,91 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Compare – Privacy Policy</title>
+<meta name="description" content="Privacy policy for the AI Compare Chrome extension. No servers, no tracking: everything stays in your browser.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3.5' fill='%2318181b'/%3E%3Crect x='2.5' y='6' width='3' height='7.5' rx='.8' fill='%2310a37f'/%3E%3Crect x='6.5' y='2.5' width='3' height='11' rx='.8' fill='%23d97757'/%3E%3Crect x='10.5' y='8' width='3' height='5.5' rx='.8' fill='%234d6bfe'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #fafafa; --surface: #ffffff; --border: #e1e1e5; --text: #121214; --muted: #5d5d66; --faint: #8d8d96;
+    --chatgpt: #10a37f; --claude: #d97757; --deepseek: #4d6bfe;
+    --mono: "JetBrains Mono", "Cascadia Mono", "SF Mono", Consolas, ui-monospace, monospace;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0e0e0f; --surface: #161617; --border: #262629; --text: #ededee; --muted: #a0a0a8; --faint: #6d6d75; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.7 var(--sans); -webkit-font-smoothing: antialiased; }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 20px 80px; }
+  .brand { display: flex; align-items: center; gap: 12px; font: 700 15px var(--mono); color: var(--muted); }
+  .bar { width: 72px; height: 4px; border-radius: 2px; margin: 28px 0 18px;
+    background: linear-gradient(90deg, var(--chatgpt) 0 33%, var(--claude) 33% 66%, var(--deepseek) 66%); }
+  h1 { margin: 0; font: 800 clamp(30px, 6vw, 40px)/1.15 var(--mono); letter-spacing: -.02em; }
+  .updated { margin: 10px 0 0; font: 13px var(--mono); color: var(--faint); }
+  .summary { margin: 32px 0 8px; padding: 18px 20px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+  .summary strong { display: block; font: 700 12px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .summary p { margin: 0; }
+  h2 { margin: 40px 0 8px; font: 700 18px var(--mono); }
+  p, li { color: var(--text); }
+  ul { padding-left: 22px; margin: 8px 0; }
+  li { margin: 6px 0; }
+  a { color: inherit; text-underline-offset: 3px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--border); font: 13px var(--mono); color: var(--faint); }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <svg width="28" height="28" viewBox="0 0 16 16" aria-hidden="true"><rect width="16" height="16" rx="3.5" fill="#18181b"/><rect x="2.5" y="6" width="3" height="7.5" rx=".8" fill="#10a37f"/><rect x="6.5" y="2.5" width="3" height="11" rx=".8" fill="#d97757"/><rect x="10.5" y="8" width="3" height="5.5" rx=".8" fill="#4d6bfe"/></svg>
+    AI Compare
+  </div>
+  <div class="bar"></div>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 12 November 2026</p>
+
+  <div class="summary">
+    <strong>The short version</strong>
+    <p>AI Compare has no servers. The developer does not collect, receive, store, sell or share any of your data. Everything the extension handles stays in your own browser.</p>
+  </div>
+
+  <p>AI Compare is a Chrome extension that sends one prompt to several AI chat websites (ChatGPT, Claude and DeepSeek) and shows their answers side by side. This policy explains what data the extension handles and what it does with it.</p>
+
+  <h2>What the extension handles</h2>
+  <ul>
+    <li><strong>Your prompts.</strong> When you press Send, the extension types your prompt into the chat box on chatgpt.com, claude.ai and/or chat.deepseek.com (whichever you selected) and submits it, just as if you had done it yourself.</li>
+    <li><strong>The answers.</strong> It reads the replies those sites show on the page so it can display them in the side panel. When you use the Judge feature, it sends the answers, anonymised, as a prompt to the AI site you picked as the judge.</li>
+    <li><strong>Settings and history.</strong> Your settings (selected models, theme, text size, view) and your last 20 comparisons (prompts, answers and verdicts) are saved in Chrome's local extension storage on your device. You can delete the history at any time with the <em>Clear</em> button in the side panel, or by removing the extension.</li>
+  </ul>
+
+  <h2>Where data goes</h2>
+  <ul>
+    <li>Prompts and answers go only to the AI websites you chose, through your own logged-in sessions. Their own privacy policies apply to what you send them:
+      <ul>
+        <li>OpenAI (ChatGPT): <a href="https://openai.com/policies/privacy-policy">openai.com/policies/privacy-policy</a></li>
+        <li>Anthropic (Claude): <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a></li>
+        <li>DeepSeek: see the privacy policy linked from <a href="https://chat.deepseek.com">chat.deepseek.com</a></li>
+      </ul>
+    </li>
+    <li>Nothing is sent to the developer of AI Compare or to any other third party.</li>
+    <li>The extension uses no analytics, tracking, advertising or remote code.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <p>The extension only has access to chatgpt.com, claude.ai and chat.deepseek.com. It does not read your browsing history or any other website.</p>
+
+  <h2>Children</h2>
+  <p>AI Compare is not directed at children under 13, and it does not knowingly handle their data.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted at this same address with a new date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a></p>
+
+  <footer>AI Compare is an independent tool and is not affiliated with OpenAI, Anthropic or DeepSeek.</footer>
+</main>
+</body>
+</html>
